@@ -1,2 +1,3 @@
 # CatCafeProject
-Collaborative project for a cat cafe website 
+Collaborative project for a cat cafe website
+

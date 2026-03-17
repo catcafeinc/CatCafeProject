@@ -1,0 +1,38 @@
+.navbar {
+  position: fixed; /* Makes it stay in place */
+  top: 0; /* Stick to top */
+  left: 0; /* Align to left edge */
+  width: 100%; /* Full width */
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 1rem 2rem;
+  background-color: #1e1e1e;
+  color: white;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+
+  z-index: 1000; /* Ensures it stays above other content */
+}
+
+.navbar-logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.navbar-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.navbar-links a {
+  text-decoration: none;
+  color: white;
+  transition: color 0.2s ease;
+}
+
+.navbar-links a:hover {
+  color: #4dabf7;
+}

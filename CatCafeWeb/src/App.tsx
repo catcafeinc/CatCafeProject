@@ -1,4 +1,6 @@
 import "./index.css";
+import HomePage from "./components/HomePage/HomePage";
+import { Box } from "@mui/material";
 
 function App() {
   return (
@@ -16,32 +18,11 @@ function App() {
             Menu
           </a>
         </nav>
-
-        <main>
-          {/* Section 1: Odd (White to Cream) */}
-          <section>
-            <div className="container">
-              <h1>Welcome to Capurrchino</h1>
-              <p>A cozy place for coffee and cats. (16px base text)</p>
-            </div>
-          </section>
-
-          {/* Section 2: Even (Cream to White) */}
-          <section>
-            <div className="container">
-              <h2>Meet our furry friends</h2>
-              <p className="cat-description">Mittens is very friendly and loves lattes. (12px text)</p>
-            </div>
-          </section>
-
-          {/* Section 3: Odd (White to Cream) */}
-          <section>
-            <div className="container">
-              <h3>Cat of the week</h3>
-              <p>Our featured friend is Luna!</p>
-            </div>
-          </section>
-        </main>
+        <section>
+          <Box sx={{ px: { xs: "4rem", sm: "4rem", md: "3rem", lg: "6rem", xl: "12rem" } }}>
+            <HomePage />
+          </Box>
+        </section>
       </div>
     </>
   );
